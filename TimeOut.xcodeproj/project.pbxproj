@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B82111226BBB412001E2A8A /* TimeOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B82111126BBB412001E2A8A /* TimeOutApp.swift */; };
+		9B82111426BBB412001E2A8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B82111326BBB412001E2A8A /* ContentView.swift */; };
+		9B82111626BBB414001E2A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B82111526BBB414001E2A8A /* Assets.xcassets */; };
+		9B82111926BBB414001E2A8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B82111826BBB414001E2A8A /* Preview Assets.xcassets */; };
+		9B82113926BBBEF2001E2A8A /* TimeOutMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B82113826BBBEF2001E2A8A /* TimeOutMonitor.swift */; };
+		9B82113D26BBBEF2001E2A8A /* MonitorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B82113626BBBEF2001E2A8A /* MonitorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9B82114826BBCA6F001E2A8A /* TimeOutShieldConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B82114726BBCA6F001E2A8A /* TimeOutShieldConfiguration.swift */; };
+		9B82114C26BBCA6F001E2A8A /* TimeOutShieldConfiguration.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B82114526BBCA6F001E2A8A /* TimeOutShieldConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9B82115126BBCD48001E2A8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B82115026BBCD48001E2A8A /* Assets.xcassets */; };
+		9B82115926BBD07B001E2A8A /* TimeOutShieldAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B82115826BBD07B001E2A8A /* TimeOutShieldAction.swift */; };
+		9B82115D26BBD07B001E2A8A /* TimeOutShieldAction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9B82115626BBD07B001E2A8A /* TimeOutShieldAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B82113B26BBBEF2001E2A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B82110626BBB412001E2A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B82113526BBBEF2001E2A8A;
+			remoteInfo = MonitorExtension;
+		};
+		9B82114A26BBCA6F001E2A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B82110626BBB412001E2A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B82114426BBCA6F001E2A8A;
+			remoteInfo = TimeOutShieldConfiguration;
+		};
+		9B82115B26BBD07B001E2A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B82110626BBB412001E2A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B82115526BBD07B001E2A8A;
+			remoteInfo = TimeOutShieldAction;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B82113126BBBD09001E2A8A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9B82114C26BBCA6F001E2A8A /* TimeOutShieldConfiguration.appex in Embed App Extensions */,
+				9B82115D26BBD07B001E2A8A /* TimeOutShieldAction.appex in Embed App Extensions */,
+				9B82113D26BBBEF2001E2A8A /* MonitorExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9B4001B626F329EE001990DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9B82110E26BBB412001E2A8A /* TimeOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeOut.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B82111126BBB412001E2A8A /* TimeOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutApp.swift; sourceTree = "<group>"; };
+		9B82111326BBB412001E2A8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B82111526BBB414001E2A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B82111826BBB414001E2A8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B82111F26BBB42D001E2A8A /* TimeOut.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeOut.entitlements; sourceTree = "<group>"; };
+		9B82113626BBBEF2001E2A8A /* MonitorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MonitorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B82113826BBBEF2001E2A8A /* TimeOutMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutMonitor.swift; sourceTree = "<group>"; };
+		9B82113A26BBBEF2001E2A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B82114526BBCA6F001E2A8A /* TimeOutShieldConfiguration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeOutShieldConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B82114726BBCA6F001E2A8A /* TimeOutShieldConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutShieldConfiguration.swift; sourceTree = "<group>"; };
+		9B82114926BBCA6F001E2A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B82115026BBCD48001E2A8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B82115626BBD07B001E2A8A /* TimeOutShieldAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimeOutShieldAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B82115826BBD07B001E2A8A /* TimeOutShieldAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeOutShieldAction.swift; sourceTree = "<group>"; };
+		9B82115A26BBD07B001E2A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B8FFD5F26F9685400D8CBC4 /* MonitorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonitorExtension.entitlements; sourceTree = "<group>"; };
+		9B8FFD6026F9686B00D8CBC4 /* TimeOutShieldConfiguration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeOutShieldConfiguration.entitlements; sourceTree = "<group>"; };
+		9B8FFD6126F9687200D8CBC4 /* TimeOutShieldAction.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeOutShieldAction.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B82110B26BBB412001E2A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82113326BBBEF2001E2A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82114226BBCA6F001E2A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82115326BBD07B001E2A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B82110526BBB412001E2A8A = {
+			isa = PBXGroup;
+			children = (
+				9B82111026BBB412001E2A8A /* TimeOut */,
+				9B82113726BBBEF2001E2A8A /* MonitorExtension */,
+				9B82114626BBCA6F001E2A8A /* TimeOutShieldConfiguration */,
+				9B82115726BBD07B001E2A8A /* TimeOutShieldAction */,
+				9B82110F26BBB412001E2A8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B82110F26BBB412001E2A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B82110E26BBB412001E2A8A /* TimeOut.app */,
+				9B82113626BBBEF2001E2A8A /* MonitorExtension.appex */,
+				9B82114526BBCA6F001E2A8A /* TimeOutShieldConfiguration.appex */,
+				9B82115626BBD07B001E2A8A /* TimeOutShieldAction.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B82111026BBB412001E2A8A /* TimeOut */ = {
+			isa = PBXGroup;
+			children = (
+				9B4001B626F329EE001990DB /* Info.plist */,
+				9B82111F26BBB42D001E2A8A /* TimeOut.entitlements */,
+				9B82111126BBB412001E2A8A /* TimeOutApp.swift */,
+				9B82111326BBB412001E2A8A /* ContentView.swift */,
+				9B82111526BBB414001E2A8A /* Assets.xcassets */,
+				9B82111726BBB414001E2A8A /* Preview Content */,
+			);
+			path = TimeOut;
+			sourceTree = "<group>";
+		};
+		9B82111726BBB414001E2A8A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9B82111826BBB414001E2A8A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B82113726BBBEF2001E2A8A /* MonitorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9B8FFD5F26F9685400D8CBC4 /* MonitorExtension.entitlements */,
+				9B82113826BBBEF2001E2A8A /* TimeOutMonitor.swift */,
+				9B82113A26BBBEF2001E2A8A /* Info.plist */,
+			);
+			path = MonitorExtension;
+			sourceTree = "<group>";
+		};
+		9B82114626BBCA6F001E2A8A /* TimeOutShieldConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				9B8FFD6026F9686B00D8CBC4 /* TimeOutShieldConfiguration.entitlements */,
+				9B82114726BBCA6F001E2A8A /* TimeOutShieldConfiguration.swift */,
+				9B82115026BBCD48001E2A8A /* Assets.xcassets */,
+				9B82114926BBCA6F001E2A8A /* Info.plist */,
+			);
+			path = TimeOutShieldConfiguration;
+			sourceTree = "<group>";
+		};
+		9B82115726BBD07B001E2A8A /* TimeOutShieldAction */ = {
+			isa = PBXGroup;
+			children = (
+				9B8FFD6126F9687200D8CBC4 /* TimeOutShieldAction.entitlements */,
+				9B82115826BBD07B001E2A8A /* TimeOutShieldAction.swift */,
+				9B82115A26BBD07B001E2A8A /* Info.plist */,
+			);
+			path = TimeOutShieldAction;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B82110D26BBB412001E2A8A /* TimeOut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B82111C26BBB414001E2A8A /* Build configuration list for PBXNativeTarget "TimeOut" */;
+			buildPhases = (
+				9B82110A26BBB412001E2A8A /* Sources */,
+				9B82110B26BBB412001E2A8A /* Frameworks */,
+				9B82110C26BBB412001E2A8A /* Resources */,
+				9B82113126BBBD09001E2A8A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B82113C26BBBEF2001E2A8A /* PBXTargetDependency */,
+				9B82114B26BBCA6F001E2A8A /* PBXTargetDependency */,
+				9B82115C26BBD07B001E2A8A /* PBXTargetDependency */,
+			);
+			name = TimeOut;
+			productName = TimeOut;
+			productReference = 9B82110E26BBB412001E2A8A /* TimeOut.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B82113526BBBEF2001E2A8A /* MonitorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B82113E26BBBEF2001E2A8A /* Build configuration list for PBXNativeTarget "MonitorExtension" */;
+			buildPhases = (
+				9B82113226BBBEF2001E2A8A /* Sources */,
+				9B82113326BBBEF2001E2A8A /* Frameworks */,
+				9B82113426BBBEF2001E2A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonitorExtension;
+			productName = MonitorExtension;
+			productReference = 9B82113626BBBEF2001E2A8A /* MonitorExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9B82114426BBCA6F001E2A8A /* TimeOutShieldConfiguration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B82114D26BBCA6F001E2A8A /* Build configuration list for PBXNativeTarget "TimeOutShieldConfiguration" */;
+			buildPhases = (
+				9B82114126BBCA6F001E2A8A /* Sources */,
+				9B82114226BBCA6F001E2A8A /* Frameworks */,
+				9B82114326BBCA6F001E2A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeOutShieldConfiguration;
+			productName = TimeOutShieldConfiguration;
+			productReference = 9B82114526BBCA6F001E2A8A /* TimeOutShieldConfiguration.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9B82115526BBD07B001E2A8A /* TimeOutShieldAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B82115E26BBD07B001E2A8A /* Build configuration list for PBXNativeTarget "TimeOutShieldAction" */;
+			buildPhases = (
+				9B82115226BBD07B001E2A8A /* Sources */,
+				9B82115326BBD07B001E2A8A /* Frameworks */,
+				9B82115426BBD07B001E2A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeOutShieldAction;
+			productName = TimeOutShieldAction;
+			productReference = 9B82115626BBD07B001E2A8A /* TimeOutShieldAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B82110626BBB412001E2A8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					9B82110D26BBB412001E2A8A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					9B82113526BBBEF2001E2A8A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					9B82114426BBCA6F001E2A8A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					9B82115526BBD07B001E2A8A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 9B82110926BBB412001E2A8A /* Build configuration list for PBXProject "TimeOut" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B82110526BBB412001E2A8A;
+			productRefGroup = 9B82110F26BBB412001E2A8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B82110D26BBB412001E2A8A /* TimeOut */,
+				9B82113526BBBEF2001E2A8A /* MonitorExtension */,
+				9B82114426BBCA6F001E2A8A /* TimeOutShieldConfiguration */,
+				9B82115526BBD07B001E2A8A /* TimeOutShieldAction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B82110C26BBB412001E2A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B82111926BBB414001E2A8A /* Preview Assets.xcassets in Resources */,
+				9B82111626BBB414001E2A8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82113426BBBEF2001E2A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82114326BBCA6F001E2A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B82115126BBCD48001E2A8A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82115426BBD07B001E2A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B82110A26BBB412001E2A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B82111426BBB412001E2A8A /* ContentView.swift in Sources */,
+				9B82111226BBB412001E2A8A /* TimeOutApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82113226BBBEF2001E2A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B82113926BBBEF2001E2A8A /* TimeOutMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82114126BBCA6F001E2A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B82114826BBCA6F001E2A8A /* TimeOutShieldConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B82115226BBD07B001E2A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B82115926BBD07B001E2A8A /* TimeOutShieldAction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B82113C26BBBEF2001E2A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B82113526BBBEF2001E2A8A /* MonitorExtension */;
+			targetProxy = 9B82113B26BBBEF2001E2A8A /* PBXContainerItemProxy */;
+		};
+		9B82114B26BBCA6F001E2A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B82114426BBCA6F001E2A8A /* TimeOutShieldConfiguration */;
+			targetProxy = 9B82114A26BBCA6F001E2A8A /* PBXContainerItemProxy */;
+		};
+		9B82115C26BBD07B001E2A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B82115526BBD07B001E2A8A /* TimeOutShieldAction */;
+			targetProxy = 9B82115B26BBD07B001E2A8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9B82111A26BBB414001E2A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B82111B26BBB414001E2A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B82111D26BBB414001E2A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeOut/TimeOut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeOut/Preview Content\"";
+				DEVELOPMENT_TEAM = ABCD1234;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeOut/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B82111E26BBB414001E2A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeOut/TimeOut.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TimeOut/Preview Content\"";
+				DEVELOPMENT_TEAM = ABCD1234;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeOut/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B82113F26BBBEF2001E2A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = MonitorExtension/MonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABCD1234;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut.MonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B82114026BBBEF2001E2A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = MonitorExtension/MonitorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABCD1234;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MonitorExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MonitorExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut.MonitorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B82114E26BBCA6F001E2A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = TimeOutShieldConfiguration/TimeOutShieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABCD1234;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeOutShieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeOutShieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut.TimeOutShieldConfiguration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B82114F26BBCA6F001E2A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = TimeOutShieldConfiguration/TimeOutShieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABCD1234;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeOutShieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeOutShieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut.TimeOutShieldConfiguration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B82115F26BBD07B001E2A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = TimeOutShieldAction/TimeOutShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABCD1234;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeOutShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeOutShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut.TimeOutShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B82116026BBD07B001E2A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = TimeOutShieldAction/TimeOutShieldAction.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABCD1234;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeOutShieldAction/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimeOutShieldAction;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eatmorepixels.TimeOut.TimeOutShieldAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B82110926BBB412001E2A8A /* Build configuration list for PBXProject "TimeOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B82111A26BBB414001E2A8A /* Debug */,
+				9B82111B26BBB414001E2A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B82111C26BBB414001E2A8A /* Build configuration list for PBXNativeTarget "TimeOut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B82111D26BBB414001E2A8A /* Debug */,
+				9B82111E26BBB414001E2A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B82113E26BBBEF2001E2A8A /* Build configuration list for PBXNativeTarget "MonitorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B82113F26BBBEF2001E2A8A /* Debug */,
+				9B82114026BBBEF2001E2A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B82114D26BBCA6F001E2A8A /* Build configuration list for PBXNativeTarget "TimeOutShieldConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B82114E26BBCA6F001E2A8A /* Debug */,
+				9B82114F26BBCA6F001E2A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B82115E26BBD07B001E2A8A /* Build configuration list for PBXNativeTarget "TimeOutShieldAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B82115F26BBD07B001E2A8A /* Debug */,
+				9B82116026BBD07B001E2A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B82110626BBB412001E2A8A /* Project object */;
+}
